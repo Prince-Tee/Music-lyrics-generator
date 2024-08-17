@@ -4,7 +4,8 @@ from dotenv import load_dotenv
 
 load_dotenv()
 
-openai.api_key = os.getenv("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")
+openai.api_key = os.getenv("OPENAI_API_KEY")
+
 
 def generate_lyrics(audio_data):
     # Use audio_data to create a prompt or use a pre-defined prompt
